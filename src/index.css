@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff7ed;
+  font-family: "Futura", sans-serif;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+header {
+  display: flex;
+}
+
+.photo-container {
+  min-width: 500px;
+  height: 500px;
+  display: flex;
+  overflow: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo {
+  /* white-space: nowrap; */
+  height: 100%;
+  min-width: 500px;
+  flex-grow: 1;
+  background-color: aquamarine;
+}

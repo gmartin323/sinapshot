@@ -1,9 +1,19 @@
 import React from 'react'
+import Header from './components/Header'
+import PhotoContainer from './components/PhotoContainer'
 
 function App() {
 
+
   return (
-    <h1>Sinapshot</h1>
+    
+      <main >
+        <Header />
+        <PhotoContainer />
+        <PhotoContainer />
+        <PhotoContainer />
+        <PhotoContainer />
+      </main>
   )
 }
 
