@@ -29,7 +29,9 @@ header {
   height: 110px;
   display: flex;
   align-items: center;
-  padding: 3rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 3rem;
 }
 
 header h1 {
@@ -42,6 +44,7 @@ header h1 {
 nav ul {
   display: flex;
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 header li {
@@ -65,7 +68,7 @@ header li {
 .photos-container {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -77,8 +80,8 @@ header li {
 }
 
 .photo {
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   background-color: #FBEFF1;
   opacity: 50%;
 }
