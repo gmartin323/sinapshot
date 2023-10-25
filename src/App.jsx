@@ -1,30 +1,30 @@
 import React from 'react'
-import Header from './components/Header'
-import PhotoContainer from './components/PhotoContainer'
-import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
+import { HashRouter, Routes, Route } from "react-router-dom"
+
+
+
+
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import Work from './pages/Work'
+import Contact from './pages/Contact'
+
 
 function App() {
 
 
   return (
-    
-      <main >
-        <Header />
-        <div className="">
-          <div className="span-container">
-            <span>
-              Scroll down
-            </span>
-          </div>
-          <HorizontalScrollCarousel />
-          <div className="span-container">
-            <span>
-              Scroll up
-            </span>
-          </div>
-        </div>
-        {/* <PhotoContainer /> */}
-      </main>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path="about" element={<About />}/>
+          <Route path="work" element={<Work />}/>
+          <Route path="contact" element={<Contact />}/>
+        </Route>
+      </Routes>
+    </HashRouter>
   )
 }
 

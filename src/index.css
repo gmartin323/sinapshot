@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #100406;
   font-family: 'EB Garamond', serif;
+  font-family: 'Instrument Sans', sans-serif;
   color: #FBEFF1;
 }
 
@@ -34,27 +35,21 @@ header {
   margin-left: 3rem;
 }
 
-header h1 {
+.site-logo {
+  font-family: 'Instrument Serif', serif;
   font-style: italic;
   margin-right: auto;
   font-weight: 900;
   font-size: 25px;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-header li {
-  text-decoration: none;
+nav a {
   padding: 5px 20px;
 }
 
 .span-container {
   display: flex;
-  height: 200px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   outline: 1px solid #FBEFF1;
@@ -62,13 +57,13 @@ header li {
 
 .photo-section {
   position: relative;
-  height: 300vh;
+  height: 200vh;
 }
 
 .photos-container {
   position: sticky;
   top: 0;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
