@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import PhotoContainer from './components/PhotoContainer'
+import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
 
 function App() {
 
@@ -9,10 +10,20 @@ function App() {
     
       <main >
         <Header />
-        <PhotoContainer />
-        <PhotoContainer />
-        <PhotoContainer />
-        <PhotoContainer />
+        <div className="">
+          <div className="span-container">
+            <span>
+              Scroll down
+            </span>
+          </div>
+          <HorizontalScrollCarousel />
+          <div className="span-container">
+            <span>
+              Scroll up
+            </span>
+          </div>
+        </div>
+        {/* <PhotoContainer /> */}
       </main>
   )
 }
