@@ -6,8 +6,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff7ed;
-  font-family: "Futura", sans-serif;
+  background-color: #100406;
+  font-family: 'EB Garamond', serif;
+  color: #FBEFF1;
 }
 
 a {
@@ -25,25 +26,35 @@ body {
 }
 
 header {
+  height: 110px;
   display: flex;
+  align-items: center;
+  padding: 3rem;
 }
 
-/* .photo-container {
-  min-width: 500px;
-  height: 500px;
-  display: flex;
-  overflow: auto;
-  gap: 20px;
-  padding: 20px;
-} */
+header h1 {
+  font-style: italic;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 25px;
+}
 
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header li {
+  text-decoration: none;
+  padding: 5px 20px;
+}
 
 .span-container {
   display: flex;
   height: 200px;
   align-items: center;
   justify-content: center;
-  outline: 1px solid black;
+  outline: 1px solid #FBEFF1;
 }
 
 .photo-section {
@@ -68,5 +79,6 @@ header {
 .photo {
   height: 500px;
   width: 500px;
-  background-color: aquamarine;
+  background-color: #FBEFF1;
+  opacity: 50%;
 }
