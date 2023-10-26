@@ -8,7 +8,7 @@ export default function HorizontalScrollCarousel() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-62.7%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0.93%", "-62.7%"]);
 
   return (
     <section ref={targetRef} className="photo-section" >
