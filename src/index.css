@@ -109,12 +109,17 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 431px) {
-  
+
   header {
     justify-content: center;
   }
 
   .site-logo {
     margin: 0 auto;
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
   }
 }
