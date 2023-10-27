@@ -54,7 +54,11 @@ header {
 }
 
 nav a {
-  padding: 5px 0px 5px 60px;
+  padding: 5px 0px
+}
+
+nav a + a {
+  padding-left: 3rem;
 }
 
 .span-container {
@@ -100,4 +104,17 @@ footer {
   margin-bottom: 0;
   margin-right: 3rem;
   margin-left: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 431px) {
+  
+  header {
+    justify-content: center;
+  }
+
+  .site-logo {
+    margin: 0 auto;
+  }
 }
